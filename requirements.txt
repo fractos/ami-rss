@@ -1,0 +1,5 @@
+logzero
+python-dateutil
+boto3
+feedgen
+requests
