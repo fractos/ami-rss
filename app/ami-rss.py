@@ -33,6 +33,10 @@ def main():
     while lifecycle_continues():
         lifecycle()
 
+        if settings.SLEEP_SECONDS == 0:
+            logger.info("exiting after running once, as SLEEP_SECONDS is 0.")
+            exit(0)
+
         if lifecycle_continues():
             logger.info("sleeping for %s seconds..." % settings.SLEEP_SECONDS)
             for _ in range(settings.SLEEP_SECONDS):

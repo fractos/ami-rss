@@ -9,7 +9,7 @@ Can place output RSS XML in either a folder or an S3 bucket (and optionally sett
 | Name              | Description                                                       | Default                                                 |
 |-------------------|-------------------------------------------------------------------|---------------------------------------------------------|
 | DEBUG             | Enable debug output in log                                        | False                                                   |
-| SLEEP_SECONDS     | Number of seconds to sleep between runs                           | 86400                                                   |
+| SLEEP_SECONDS     | Number of seconds to sleep between runs (set to 0 to run once)    | 86400                                                   |
 | DB_TYPE           | Database type (sqlite or postgresql)                              | sqlite                                                  |
 | REGION            | Region we should report on                                        | eu-west-1                                               |
 | SSM_PATH          | SSM Path of AMI recommendation                                    | /aws/service/ecs/optimized-ami/amazon-linux/recommended |
